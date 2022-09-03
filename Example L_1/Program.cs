@@ -1,12 +1,13 @@
-﻿// ПРОГРАММЫ из первой лекции.
-// Первая программа из 1 лекции СЛОЖЕНИЕ ЧИСЕЛ
+﻿// Знакомство с языками программирования ЛЕКЦИ, решения ПРОГРАММ из 1-ой лекции.
+
+    // Первая программа из 1 лекции СЛОЖЕНИЕ ЧИСЕЛ
 
 // int numberA = 28;
 // int numberB = 49;
 // Console.WriteLine(numberA + numberB);
 
 
-// Она же но через result
+    // Она же но через result
 
 // int numberA = 28;
 // int numberB = 49;
@@ -14,7 +15,7 @@
 // Console.WriteLine(result);
 
 
-// Вторая программа из 1 лекции ДЕЛЕНИЕ
+    // Вторая программа из 1 лекции ДЕЛЕНИЕ
 
 // int numberA = 28;
 // int numberB = 4;
@@ -22,7 +23,7 @@
 // Console.WriteLine(result);
 
 
-// Вторая программа из 1 лекции ДЕЛЕНИЕ но вещественные числа (double)
+    // Вторая программа из 1 лекции ДЕЛЕНИЕ но вещественные числа (double)
 
 // double numberA = 28;
 // double numberB = 46;
@@ -30,7 +31,7 @@
 // Console.WriteLine(result);
 
 
-//Третья программа из 1 лекции
+    //Третья программа из 1 лекции - сложение двух случайных чисел
 
 // int numberA = new Random().Next(1,10); // 123...9
 // Console.WriteLine (numberA);
@@ -39,7 +40,7 @@
 // Console.WriteLine(numberA + numberB);
 
 
-//Четвертая программа из 1 лекции МАША IF - ELSE
+    //Четвертая программа из 1 лекции МАША IF - ELSE
 
 // Console.Write ("Введите имя пользователя: ");
 // string username = Console.ReadLine();
@@ -54,7 +55,7 @@
 // }
 
 
-// Она же но с ToLower
+    // Она же но с ToLower
 
 // Console.Write ("Введите имя пользователя: ");
 // string username = Console.ReadLine();
@@ -69,7 +70,8 @@
 // }
 
 
-// 5-ая программа - приер с гирями (найти большее число)
+    // 5-ая программа - приер с гирями (найти наибольшее число)
+
 // int a = 1;
 // int b = 2;
 // int c = 3;
@@ -87,6 +89,4 @@
 // Console.Write("max = ");
 // Console.WriteLine(max);
 
-
-
-
+END
