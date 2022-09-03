@@ -1,4 +1,5 @@
-﻿// Первая программа из 1 лекции СЛОЖЕНИЕ ЧИСЕЛ
+﻿// ПРОГРАММЫ из первой лекции.
+// Первая программа из 1 лекции СЛОЖЕНИЕ ЧИСЕЛ
 
 // int numberA = 28;
 // int numberB = 49;
@@ -21,7 +22,7 @@
 // Console.WriteLine(result);
 
 
-// Вторая программа из 1 лекции ДЕЛЕНИЕ но вещественные числа
+// Вторая программа из 1 лекции ДЕЛЕНИЕ но вещественные числа (double)
 
 // double numberA = 28;
 // double numberB = 46;
@@ -38,16 +39,54 @@
 // Console.WriteLine(numberA + numberB);
 
 
-//Четвертая программа из 1 лекции ИМЯ
+//Четвертая программа из 1 лекции МАША IF - ELSE
 
-Console.Write ("Введите имя пользователя: ");
-string username = Console.ReadLine();
-if(username == "Маша")
-{
-    Console.WriteLine("Ура Маша!))");
-}
-else
-{
-    Console.Write("Привет, ");
-    Console.WriteLine(username);
-}
+// Console.Write ("Введите имя пользователя: ");
+// string username = Console.ReadLine();
+// if(username == "Маша")
+// {
+//     Console.WriteLine("Ура Маша!))");
+// }
+// else
+// {
+//     Console.Write("Привет, ");
+//     Console.WriteLine(username);
+// }
+
+
+// Она же но с ToLower
+
+// Console.Write ("Введите имя пользователя: ");
+// string username = Console.ReadLine();
+// if(username.ToLower() == "маша")
+// {
+//     Console.WriteLine("Ура МАША!))");
+// }
+// else
+// {
+//     Console.Write("Привет, ");
+//     Console.WriteLine(username);
+// }
+
+
+// 5-ая программа - приер с гирями (найти большее число)
+// int a = 1;
+// int b = 2;
+// int c = 3;
+// int d = 4;
+// int e = 5;
+
+// int max = a;
+
+// if (a > max ) max = a;
+// if (b > max ) max = b;
+// if (c > max ) max = c;
+// if (d > max ) max = d;
+// if (e > max ) max = e;
+
+// Console.Write("max = ");
+// Console.WriteLine(max);
+
+
+
+
