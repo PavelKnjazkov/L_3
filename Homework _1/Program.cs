@@ -105,17 +105,37 @@
 
 //РЕШЕНИЕ:
 
-int x = new Random().Next(1, 10); // 123... 10
-Console.WriteLine("А сейчас я сам загадаю число!");
-Console.WriteLine("И определю чет или нечет :)");
+// Console.WriteLine("Введи любое число: ");
+// int N = int.Parse(Console.ReadLine());
+// int i = 1;
 
-if (x % 2 == 0) //тут вопрос какая разница с (x % 2 == 1)
+// while (true)
+// {
+//     if (i % 2 == 0)
+//     {
+//         Console.Write(i + " ");
+//         i++;
+//     }
+//     if (N <= i)
+//     {
+//         break;
+//     }
+//     i++;
+// }
+
+// Ещё один вариант решения:
+
+int i = 1;
+
+Console.WriteLine("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Чётные числа от 1 до " + num);
+while (i <= num)
 {
-Console.WriteLine(x + " четное число");
+    if (i % 2 == 0)
+    {
+        Console.Write(i + ", ");
+    }
+    i++;
 }
-else
-{
-Console.WriteLine(x + " нечетное число!");
-}
- x += 2;
- Console.Write(x);

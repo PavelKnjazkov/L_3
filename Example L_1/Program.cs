@@ -1,13 +1,13 @@
 ﻿// Знакомство с языками программирования ЛЕКЦИ, решения ПРОГРАММ из 1-ой лекции.
 
-    // Первая программа из 1 лекции СЛОЖЕНИЕ ЧИСЕЛ
+// Первая программа из 1 лекции СЛОЖЕНИЕ ЧИСЕЛ
 
 // int numberA = 28;
 // int numberB = 49;
 // Console.WriteLine(numberA + numberB);
 
 
-    // Она же но через result
+// Она же но через result
 
 // int numberA = 28;
 // int numberB = 49;
@@ -15,7 +15,7 @@
 // Console.WriteLine(result);
 
 
-    // Вторая программа из 1 лекции ДЕЛЕНИЕ
+// Вторая программа из 1 лекции ДЕЛЕНИЕ
 
 // int numberA = 28;
 // int numberB = 4;
@@ -23,7 +23,7 @@
 // Console.WriteLine(result);
 
 
-    // Вторая программа из 1 лекции ДЕЛЕНИЕ но вещественные числа (double)
+// Вторая программа из 1 лекции ДЕЛЕНИЕ но вещественные числа (double)
 
 // double numberA = 28;
 // double numberB = 46;
@@ -31,7 +31,7 @@
 // Console.WriteLine(result);
 
 
-    //Третья программа из 1 лекции - сложение двух случайных чисел
+//Третья программа из 1 лекции - сложение двух случайных чисел
 
 // int numberA = new Random().Next(1,10); // 123...9
 // Console.WriteLine (numberA);
@@ -40,7 +40,7 @@
 // Console.WriteLine(numberA + numberB);
 
 
-    //Четвертая программа из 1 лекции МАША IF - ELSE
+//Четвертая программа из 1 лекции МАША IF - ELSE
 
 // Console.Write ("Введите имя пользователя: ");
 // string username = Console.ReadLine();
@@ -55,7 +55,7 @@
 // }
 
 
-    // Она же но с ToLower
+// Она же но с ToLower
 
 // Console.Write ("Введите имя пользователя: ");
 // string username = Console.ReadLine();
@@ -70,7 +70,7 @@
 // }
 
 
-    // 5/6-ая программа - приер с гирями (найти наибольшее число)
+// 5/6-ая программа - приер с гирями (найти наибольшее число)
 
 // int a = 1;
 // int b = 2;
@@ -89,51 +89,52 @@
 // Console.Write("max = ");
 // Console.WriteLine(max);
 
-    // 7-ая программа - Magic
-//Запоминаем команды:
+// 7-ая программа - Magic
+//Запоминаем команды: 
 Console.Clear();
-// Console.SetCursorPosition(10, 4);
-// Console.WriteLine("+");
 
-// int xa = 40, ya = 1,
-//     xb = 1, yb = 30,
-//     xc = 80, yc = 30;
+Console.SetCursorPosition(10, 4);
+Console.WriteLine("+");
 
-// Console.SetCursorPosition(xa, ya);
-// Console.WriteLine("+");
+int xa = 40, ya = 1,
+xb = 1, yb = 30,
+xc = 80, yc = 30;
 
-// Console.SetCursorPosition(xb, yb);
-// Console.WriteLine("+");
+Console.SetCursorPosition(xa, ya);
+Console.WriteLine("+");
 
-// Console.SetCursorPosition(xc, yc);
-// Console.WriteLine("+");
+Console.SetCursorPosition(xb, yb);
+Console.WriteLine("+");
 
-// int x = xa, y = xb;
+Console.SetCursorPosition(xc, yc);
+Console.WriteLine("+");
 
-// int count = 0;
+int x = xa, y = xb;
 
-// while(count < 10000)
+int count = 0;
 
-// {
-//     int what = new Random().Next(0, 3); // 1 2 3
-//     if (what ==0)
-//     {
-//         x = (x + xa) / 2;
-//         y = (y + ya) / 2;
-//     }
-//     if (what ==1)
-//     {
-//         x = (x + xb) / 2;
-//         y = (y + yb) / 2;
-//     }
-//     if (what ==2)
-//     {
-//         x = (x + xc) / 2;
-//         y = (y + yc) / 2;
-//     }
-//     Console.SetCursorPosition(x, y);
-//     Console.WriteLine("+");
-//     count = count + 1; // или count +=1; или count++;
-// }
+while (count < 10000)
+
+{
+    int what = new Random().Next(0, 3); // 1 2 3
+    if (what == 0)
+    {
+        x = (x + xa) / 2;
+        y = (y + ya) / 2;
+    }
+    if (what == 1)
+    {
+        x = (x + xb) / 2;
+        y = (y + yb) / 2;
+    }
+    if (what == 2)
+    {
+        x = (x + xc) / 2;
+        y = (y + yc) / 2;
+    }
+    Console.SetCursorPosition(x, y);
+    Console.WriteLine("+");
+    count = count + 1; // или count +=1; или count++;
+}
 
 //        !!!END!!!
