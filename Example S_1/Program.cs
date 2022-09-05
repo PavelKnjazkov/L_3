@@ -38,15 +38,15 @@
 // 2 -> " -2, -1, 0, 1, 2"
 
 // РЕШЕНИЕ:
-Console.WriteLine("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+// Console.WriteLine("Введите число: ");
+// int number = int.Parse(Console.ReadLine());
 
-int startNumber = Math.Abs(number) * -1;
+// int startNumber = Math.Abs(number) * -1;
 
-while (startNumber <= number)
-{
-    Console.WriteLine(startNumber);
-    startNumber = startNumber + 1;
-}
+// while (startNumber <= number)
+// {
+//     Console.WriteLine(startNumber);
+//     startNumber = startNumber + 1;
+// }
 
 // END
