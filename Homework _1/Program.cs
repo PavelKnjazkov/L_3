@@ -125,17 +125,33 @@
 
 // Ещё один вариант решения:
 
-int i = 1;
+// int i = 1;
 
-Console.WriteLine("Введите число:");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число:");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Чётные числа от 1 до " + num);
-while (i <= num)
+// Console.WriteLine("Чётные числа от 1 до " + num);
+// while (i <= num)
+// {
+//     if (i % 2 == 0)
+//     {
+//         Console.Write(i + ", ");
+//     }
+//     i++;
+// }
+
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+// Решение на  3-ем семинаре:
+
+int[] nums = new int[10] {10, 41, 25, 4, 5, 6, 7, 8, 9, 10}; //массив чисел в 10 элементов
+
+int max = nums[0];
+for (int i = 0; i < nums.Length; i++)
 {
-    if (i % 2 == 0)
-    {
-        Console.Write(i + ", ");
-    }
-    i++;
+    if (nums[i] > max)
+{
+max = nums [i];
 }
+}
+Console.Clear();
+Console.WriteLine(max);
