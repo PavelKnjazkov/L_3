@@ -12,13 +12,15 @@
 
 int num, r, sum = 0, t;
 Console.WriteLine("Привет, попробуй введи пятизначное число! Посмотрим, вдруг это палиндром!?))");
-num = Convert.ToInt32(Console.ReadLine()); 
+num = Convert.ToInt32(Console.ReadLine());
 for (t = num; num != 0; num = num / 10)
 {
     r = num % 10; // что это?
     sum = sum * 10 + r; // что это?
 }
-if (t == sum) 
+if (t == sum)
     Console.Write("{0} - вот молодец! Да это ОН!!!", t);
 else
     Console.Write("{0} - ну вот, попробуй ещё раз!", t);
+
+// Если слова!?
