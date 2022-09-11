@@ -64,18 +64,27 @@
 // A (3,6); B (2,1) -> 5,09
 // A (7,-5); B (1,-1) -> 7,21
 
-Console.WriteLine("Enter coordinates point А: ");
-Console.WriteLine("Enter x: ");
-int Ax = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter y: ");
-int Ay = Convert.ToInt32(Console.ReadLine());
+// Получение расстояния между двумя точками на плоскости
+double GetDistanceTwoPoint(int x1, int y1, int x2, int y2) 
+{
+    double distanse = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2));
 
-Console.WriteLine("Enter coordinates point B: ");
-Console.WriteLine("Enter x: ");
-int Bx = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter y: ");
-int By = Convert.ToInt32(Console.ReadLine());
+    return distanse;
+}
 
-double distance = Math.Sqrt((Math.Pow(Ax - Bx, 2) + Math.Pow(Bx - By, 2)));
-Console.WriteLine(distance);
+Console.Write("Введите X1: ");
+int x1 = int.Parse(Console.ReadLine());
+
+Console.Write("Введите Y1: ");
+int y1 = int.Parse(Console.ReadLine());
+
+Console.Write("Введите X2: ");
+int x2 = int.Parse(Console.ReadLine());
+
+Console.Write("Введите Y2: ");
+int y2 = int.Parse(Console.ReadLine());
+
+// Расчет расстояния между двумя точками на плоскости
+double result = GetDistanceTwoPoint(x1, y1, x2, y2);
+Console.WriteLine($"Расстояние между точками ({x1}, {y1}) и ({x2}, {y2}) равно {Math.Round(result, 2, MidpointRounding.ToNegativeInfinity)}");
 
