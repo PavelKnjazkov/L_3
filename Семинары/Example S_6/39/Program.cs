@@ -3,7 +3,7 @@
 // [1 2 3 4 5] -> [5 4 3 2 1]
 // [6 7 3 6] -> [6 3 7 6]
 
-int [] GetReversArray1(int[] array)
+int[] GetReverseArray1(int[] array)
 {
     int[] result = new int[array.Length];
     for (int i = 0; i < result.Length; i++)
@@ -14,7 +14,7 @@ int [] GetReversArray1(int[] array)
     return result;
 }
 
-int[] array = new int[] {1, 2, 3, 4, 5};
-int[] result = GetReversArray1(array);
+int[] array = new int[] { 1, 2, 3, 4, 5 };
+int[] result = GetReverseArray1(array);
 
 Console.ReadKey();
