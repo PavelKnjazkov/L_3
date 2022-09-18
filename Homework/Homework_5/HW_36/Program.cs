@@ -20,7 +20,7 @@ void FillArrayRandomNumbers(int[] numbers)
 {
     for(int i = 0; i < numbers.Length; i++)
         {
-            numbers[i] = new Random().Next(1,99);
+            numbers[i] = new Random().Next(-99,99);
         }
 }
 void PrintArray(int[] numbers)
