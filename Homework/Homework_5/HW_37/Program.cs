@@ -12,7 +12,7 @@ int[] GetPairMult(int[] array)
         size = array.Length / 2;
         result = new int[size];
 
-        for (int i = 0; i < size; i++) ;
+        for (int i = 0; i < size; i++)
         {
             result[i] = array[i] * array[array.Length - i - 1];
         }
@@ -21,18 +21,18 @@ int[] GetPairMult(int[] array)
     {
         size = (array.Length / 2) + 1;
         result = new int[size];
-
-        for (int i = 0; i < size; i++) ;
     }
-    int[] result = new int[size];
+    for (int i = 0; i < size; i++)
+
+        int[] result = new int[size];
 
     for (int i = 0; i < rusult.Length; i++)
     {
         if (i = 0; i < size; i++)
     }
     {
-        result[i] = array[i] * array[size - 1 - i];
-    }
+    result[i] = array[i] * array[size - 1 - i];
+}
 }
 
 int[] array = new int[] { 1, 4, 6, 3, 7 };
