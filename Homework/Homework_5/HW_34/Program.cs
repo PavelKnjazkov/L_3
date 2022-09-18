@@ -6,7 +6,7 @@ Console.WriteLine("Введите размер массива:  ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
-Console.WriteLine("массив: ");
+Console.WriteLine("Вот наш массив: ");
 PrintArray(numbers);
 int count = 0;
 
@@ -14,7 +14,7 @@ for (int i = 0; i < numbers.Length; i++)
     if (numbers[i] % 2 == 0)
         count++;
 
-Console.WriteLine($"всего {numbers.Length} чисел, {count} из них чётные");
+Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов на нечётных позициях {count}");
 
 void FillArrayRandomNumbers(int[] numbers)
 {
