@@ -3,36 +3,38 @@
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 
-int[] GetPairMult(int[] array)
-{
-    int size = 0;
-    int[] result = null;
-    if (array.Length % 2 == 0)
-    {
-        size = array.Length / 2;
-        result = new int[size];
+int [] array = {6, 7, 3, 6};
 
-        for (int i = 0; i < size; i++)
+int[] GetMulti (int[] array)
+{
+    int size = array.Length;
+    int sizeNew = 0;
+    sizeNew = size/2;
+    
+   
+    if (size % 2 == 0) 
+    {
+        int[] result = new int[sizeNew];
+        for (int i = 0; i < result.Length; i++)
         {
-            result[i] = array[i] * array[array.Length - i - 1];
+            result[i] = array[i] * array[size-1-i];
         }
+        return result;
     }
     else
     {
-        size = (array.Length / 2) + 1;
-        result = new int[size];
+        int[] result = new int[sizeNew+1];
+        for (int i = 0; i < result.Length; i++)
+        {
+            result[i] = array[i] * array[size-1-i];
+        }
+        result[sizeNew] = array[size/2];
+        return result;
     }
-    for (int i = 0; i < size; i++)
-
-        int[] result = new int[size];
-
-    for (int i = 0; i < result.Length; i++)
-    {
-        if (i = 0; i < size; i++)
-    }
-    {
-    result[i] = array[i] * array[size - 1 - i];
+    
 }
+int[] newArray = GetMulti(array);
+for (int i = 0; i < newArray.Length; i++)
+{
+    Console.Write($"{newArray[i]} ");
 }
-
-int[] array = new int[] { 1, 4, 6, 3, 7 };
