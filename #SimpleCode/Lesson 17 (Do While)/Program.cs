@@ -1,0 +1,24 @@
+﻿try
+{   // Вычисляем факториал числа
+    int i, result = 1, num = 1;
+
+    Console.WriteLine("Введите число:");
+    i = int.Parse(Console.ReadLine());
+
+    Console.Write("\n\nФакториал {0} = ", i);
+    do
+    {
+        result *= num;
+        num++;
+    } while (num <= i);
+
+    Console.Write(result);
+}
+catch (FormatException ex)
+{
+    Console.WriteLine("Вы ввели не число. {0}", ex.Message);
+}
+finally
+{
+    Console.ReadLine();
+}
