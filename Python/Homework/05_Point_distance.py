@@ -14,7 +14,7 @@ def Get_coordinates(num_plan, left, right):     # координаты точе�
 def Find_dist(a, b):    # расстояние между точками
     return round(math.sqrt(sum((x - y)**2 for x, y in zip(a, b))), 3)
 
-num_plan = 3    # количество осей координат
+num_plan = 2    # количество осей координат
 left = -10
 right = 10
 
