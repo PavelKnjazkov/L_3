@@ -3,25 +3,37 @@
 # - при $d = 0.001, π = 3.141.$    $10^{-1} ≤ d ≤10^{-10}$
 
 import math
+
+pi = math.pi
+print('Pi = ', pi)
+d = 0.001
+print(f'Accuracy = {d}')
+count = 0
+while d < 1:
+    count += 1
+    d = d*10
+print(round(pi, count))
+
+
 from math import pi
 
-n = pi
-print(n)
+d =  int(input("Введите число для заданной точности числа Пи:\n"))
+print(f'число Пи с заданной точностью {d} равно {round(pi, d)}')
+
+## Просто Pi
+# # Формула Бэйли — Боруэйна — Плаффа
+
+# n = 100
+# my_pi = sum(1/16**x*(4/(8*x + 1) - 2/(8*x + 4) - 1/(8*x + 5) - 1/(8*x + 6)) for x in range(n))
+
+# print(my_pi)
 
 
-# Формула Бэйли — Боруэйна — Плаффа
+# # Ряд Лейбница
 
-n = 100
-my_pi = sum(1/16**x*(4/(8*x + 1) - 2/(8*x + 4) - 1/(8*x + 5) - 1/(8*x + 6)) for x in range(n))
+# n = 20000000
 
-print(my_pi)
+# mypi = 4 * (sum(1/x for x in range(1, n + 1, 4)) +
+#             sum(-1/x for x in range(3, n + 1, 4)))
 
-
-# Ряд Лейбница
-
-n = 20000000
-
-mypi = 4 * (sum(1/x for x in range(1, n + 1, 4)) +
-            sum(-1/x for x in range(3, n + 1, 4)))
-
-print(format(mypi, '.100'))
+# print(format(mypi, '.100'))
