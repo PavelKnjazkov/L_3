@@ -4,13 +4,13 @@
 
 num = int(input("Введите число: "))
 i = 2 # первое простое число
-lst = []
+list = []
 old = num
 while i <= num:
     if num % i == 0:
-        lst.append(i)
+        list.append(i)
         num //= i
         i = 2
     else:
         i += 1
-print(f"Простые множители числа {old} приведены в списке: {lst}")
+print(f"Простые множители числа {old} приведены в списке: {list}")

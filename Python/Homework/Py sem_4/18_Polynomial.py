@@ -5,3 +5,21 @@
 # - k = 2  => 2*x² + 4*x + 5
 # - k = 3  => 41*x^3 + 6*x² + 2*x + 98
 
+### решение с семинара
+
+from random import randint
+
+k = int(input("Введите степень k: "))
+for i in range(k, 0, -1):
+    factor = randint(1, 101)
+    if factor == 0:
+        continue
+    elif factor == 1:
+        factor = ""
+    else:
+        factor = f"{factor}*x^{i} +" if i != 1 else f"{factor}*x +"
+    print(factor, end=" ")
+
+print(f"{randint(1, 101)} = 0")
+n = 1
+print(str(n) + " = 0")

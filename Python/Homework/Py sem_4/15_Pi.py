@@ -2,25 +2,37 @@
 # Пример:
 # - при $d = 0.001, π = 3.141.$    $10^{-1} ≤ d ≤10^{-10}$
 
-import math
-
-pi = math.pi
-print('Pi = ', pi)
-d = 0.001
-print(f'Accuracy = {d}')
-count = 0
-while d < 1:
-    count += 1
-    d = d*10
-print(round(pi, count))
-
+# Решение с семинара
 
 from math import pi
 
-d =  int(input("Введите число для заданной точности числа Пи:\n"))
-print(f'число Пи с заданной точностью {d} равно {round(pi, d)}')
+num = int(input())
+stroka = str(pi)
+print(float(stroka[0:num+2]))
+
+# import math
+
+# pi = math.pi
+# print('Pi = ', pi)
+# d = 0.001
+# print(f'Accuracy = {d}')
+# count = 0
+# while d < 1:
+#     count += 1
+#     d = d*10
+# print(round(pi, count))
+
+
+## РЕШЕНИЕ)))
+
+# from math import pi
+
+# d =  int(input("Введите число для заданной точности числа Пи:\n"))
+# print(f'число Пи с заданной точностью {d} равно {round(pi, d)}')
+
 
 ## Просто Pi
+
 # # Формула Бэйли — Боруэйна — Плаффа
 
 # n = 100

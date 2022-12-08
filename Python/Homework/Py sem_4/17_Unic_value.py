@@ -3,6 +3,16 @@
 # Ввод: 1 2 3 2 4 4
 # Вывод: 1 3 4
 
+spisok = [int(i) for i in input("Введите числа через пробел: ").split()]
+result = []
+for i in spisok:
+    if spisok.count(i) == 1:
+        result.append(i)
+print("Данные из чисел встречаются всего один раз: ")
+print(*result)
+
+#####
+
 # lst = list(map(int, input("Введите числа через пробел:\n").split()))
 # print(f"Исходный список: {lst}")
 # new_lst = []
@@ -10,18 +20,20 @@
 # print(f"Список из неповторяющихся элементов: {new_lst}")
 
 
-from random import randint
+##### Сам заполняет
 
-def create_list(size, m, n):
-    return [randint(m, n) for i in range(size)]
+# from random import randint
 
-def get_unic_value(list):
-    return [i for i in set(list)]
+# def create_list(size, m, n):
+#     return [randint(m, n) for i in range(size)]
 
-size = 10
-m = 1
-n = 10
+# def get_unic_value(list):
+#     return [i for i in set(list)]
 
-origin = create_list(size, m, n)
-print(origin)
-print(get_unic_value(origin))
+# size = 10
+# m = 1
+# n = 10
+
+# origin = create_list(size, m, n)
+# print(origin)
+# print(get_unic_value(origin))
