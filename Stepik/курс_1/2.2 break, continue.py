@@ -44,7 +44,7 @@
 # print(i)
 
 
-n = 232
+n = 235
 i = 2
 while i * i <= n:
     if n % i == 0:
