@@ -46,3 +46,4 @@ for i in range(a, b + 1):
     for n in range(c, d + 1):
         print(i * n, end="\t")
     print()
+
