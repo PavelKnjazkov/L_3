@@ -7,4 +7,3 @@
 # Восстановить
 # Ввёл: stroka = "3a4b2c3b"
 # Вывод: stroka = "aaabbbbccbbb"
-
