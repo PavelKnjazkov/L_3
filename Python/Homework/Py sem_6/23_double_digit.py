@@ -5,8 +5,19 @@
 
 # Все задачи решать с помощью использования лямбд, filter, map, zip, enumerate, List Comprehension
 
+# Решение с семинара
+
 def double_digit():
-    nums = list(map(int, input('Введите числа через пробел:').split()))
+    nums = list(map(int, input('Введ чисел:').split()))
     return ' '.join(map(str, filter(lambda i: 9 < abs(i) < 100, nums)))
 
-print(f'[{double_digit()}]') # пример расходится с условием задачи, вывод организовал как в тексте: одной строкой через пробел.
+
+print(f'[{double_digit()}]')
+
+# #
+
+# def double_digit():
+#     nums = list(map(int, input('Введите числа через пробел:').split()))
+#     return ' '.join(map(str, filter(lambda i: 9 < abs(i) < 100, nums)))
+
+# print(f'[{double_digit()}]') # пример расходится с условием задачи, вывод организовал как в тексте: одной строкой через пробел.

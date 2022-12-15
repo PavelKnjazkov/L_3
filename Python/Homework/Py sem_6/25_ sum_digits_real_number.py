@@ -28,3 +28,11 @@ num = input('Введите любое вещественное число: ')
 print(f'Сумма цифр в этом числе равна {sum_digits(num)}')
 
 # Если на вход попадает значение типа float, то достаточно перевести значение в тип str (str(num).replace...)
+
+# # Решение с семинара:
+
+# def summa(num):
+#     return sum(map(int, num.replace(".","").replace("-","")))
+
+# num = input ("Введите число: ")
+# print(f"Сумма цифр в числе: {summa(num)}")
