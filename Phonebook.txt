@@ -1,0 +1,27 @@
+Фамилия: Князьков
+
+Имя: Семен
+
+Номер телефона: 89219211111
+
+Описание: редкий засранец
+
+
+Фамилия: & C:/Users/Noname/AppData/Local/Programs/Python/Python311/python.exe "c:/Users/Noname/Desktop/GB_ДЗ/L_3/Python/Homework/Py sem_7/File_writing.py"
+
+Имя: & C:/Users/Noname/AppData/Local/Programs/Python/Python311/python.exe "c:/Users/Noname/Desktop/GB_ДЗ/L_3/Python/Homework/Py sem_7/CSV_creating.py"
+
+Номер телефона: 89219211122
+
+Описание: упс
+
+
+Фамилия: Иванов
+
+Имя: Игорь
+
+Номер телефона: 89119211122
+
+Описание: упссс
+
+
