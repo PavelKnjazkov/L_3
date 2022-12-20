@@ -25,3 +25,30 @@
 Описание: упссс
 
 
+Фамилия: & C:/Users/Noname/AppData/Local/Programs/Python/Python311/python.exe "c:/Users/Noname/Desktop/GB_ДЗ/L_3/Python/Homework/Py sem_7/File_writing.py"
+
+Имя: Иван
+
+Номер телефона: 89212144545
+
+Описание: комтшкт
+
+
+Фамилия: аива
+
+Имя: иваыиав
+
+Номер телефона: 12345678912
+
+Описание: аппп
+
+
+Фамилия: bfdb
+
+Имя: fdbfd
+
+Номер телефона: 12334567878
+
+Описание: bgbg
+
+
