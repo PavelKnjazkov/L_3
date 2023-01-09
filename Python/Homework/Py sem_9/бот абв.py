@@ -30,10 +30,10 @@ def del_abv(update, context):
 #     context.bot.send_message(update.effective_chat.id, " ".join(list1[1:]))
 
 
-# hand_com = CommandHandler("filter", del_abvV2)
+# hand_com = CommandHandler("filter", del_abvV2) # тут будет через команду /filter и вводимый текст
 del_handler = MessageHandler(Filters.text, del_abv)
 dispatcher.add_handler(del_handler)
-dispatcher.add_handler(hand_com)
+# dispatcher.add_handler(hand_com)
 
 updater.start_polling()
 updater.idle()
