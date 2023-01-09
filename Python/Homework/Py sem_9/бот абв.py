@@ -1,11 +1,10 @@
-# Урок 9. Возможна ли жизнь без PIP?
+# РЕШЕНИЯ С СЕМИНАРА
+# Урок 9. Возможна ли жизнь без PIP? 
 # 1) Напишите Бота, удаляющего из текста все слова, содержащие "абв". (Ввод от пользователя)
 
 from telegram import Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler
 from random import randint as rd
-
-#TOKEN = "5877452533:AAEogg4E_d6AplIEYtvfew_gmH1rmYlarEs"
 
 bot = Bot(token="5877452533:AAEogg4E_d6AplIEYtvfew_gmH1rmYlarEs")
 updater = Updater(token="5877452533:AAEogg4E_d6AplIEYtvfew_gmH1rmYlarEs")
@@ -37,4 +36,3 @@ dispatcher.add_handler(hand_com)
 
 updater.start_polling()
 updater.idle()
-
