@@ -12,28 +12,28 @@ updater = Updater(token="5877452533:AAEogg4E_d6AplIEYtvfew_gmH1rmYlarEs")
 dispatcher = updater.dispatcher
 
 
-def del_abv(update, context):
-    text = update.message.text.split()
-    list1 = []
-    for i in text:
-        if "абв" in i:
-            list1.append(i)
-    context.bot.send_message(update.effective_chat.id, " ".join(list1))
-
-
-# def del_abvV2(update, context):
+# def del_abv(update, context):
 #     text = update.message.text.split()
 #     list1 = []
 #     for i in text:
 #         if "абв" in i:
 #             list1.append(i)
-#     context.bot.send_message(update.effective_chat.id, " ".join(list1[1:]))
+#     context.bot.send_message(update.effective_chat.id, " ".join(list1))
 
 
-# hand_com = CommandHandler("filter", del_abvV2) # тут будет через команду /filter и вводимый текст
-del_handler = MessageHandler(Filters.text, del_abv)
-dispatcher.add_handler(del_handler)
-# dispatcher.add_handler(hand_com)
+def del_abvV2(update, context):
+    text = update.message.text.split()
+    list1 = []
+    for i in text:
+        if "абв" in i:
+            list1.append(i)
+    context.bot.send_message(update.effective_chat.id, " ".join(list1[1:]))
+
+
+hand_com = CommandHandler("filter", del_abvV2) # тут будет через команду /filter и вводимый текст
+# del_handler = MessageHandler(Filters.text, del_abv)
+# dispatcher.add_handler(del_handler)
+dispatcher.add_handler(hand_com)
 
 updater.start_polling()
 updater.idle()
