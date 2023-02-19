@@ -12,10 +12,10 @@
 // }
 
 
-const n = prompt("Введите Ваше имя: ");
+const userName = prompt("Введите Ваше имя: ");
 
-greeting (n);
+greeting(userName);
 
-function greeting(n) {
-   console.log(`Приветствуем Вас, ${n}!`); 
+function greeting(userName) {
+   console.log(`Приветствуем Вас, ${userName}!`); 
 }
